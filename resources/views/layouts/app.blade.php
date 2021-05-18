@@ -17,16 +17,16 @@
         <link rel="stylesheet" href="{{ asset('public/backend/vendors/perfect-scrollbar/perfect-scrollbar.css') }}">
         <link rel="stylesheet" href="{{ asset('public/backend/vendors/bootstrap-icons/bootstrap-icons.css') }}">
 
-
         <!-- Styles -->
         <link rel="stylesheet" href="{{ asset('public/backend/css/bootstrap.css') }}">
         <link rel="stylesheet" href="{{ asset('public/backend/css/app.css') }}">
-
 
         @livewireStyles
 
         <!-- Scripts -->
         <script src="{{ asset('public/backend/js/app.js') }}" defer></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body>
         <div id="app">
@@ -49,9 +49,13 @@
         </div>
         <script src="{{ asset('public/backend/vendors/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>
         <script src="{{ asset('public/backend/js/bootstrap.bundle.min.js') }}"></script>
+        <!-- CKEditor -->
+        <script src="{{ asset('public/backend/vendors/ckeditor/ckeditor.js') }}"></script>
 
         @livewireScripts
         <script src="{{ asset('public/backend/js/main.js') }}"></script>
+        
 
     </body>
+
 </html>

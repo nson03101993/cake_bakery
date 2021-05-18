@@ -14,3 +14,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/dashboard', 'AdminController@dashboard')->name('dashboard');
+
+//Category
+
+Route::group(['middleware' => ['web']], function(){
+
+    //Category
+    Route::resource('category', 'CategoryController')->except(['show'])->names([
+        'index' => 'category.list',
+        'destroy' => 'category.delete'
+    ]);
+
+});

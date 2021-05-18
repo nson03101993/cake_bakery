@@ -20,7 +20,7 @@
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" class='sidebar-link'>
+                    <a href="{{ route('category.list') }}" class='sidebar-link'>
                         <i class="fa fa-folder-open"></i>
                         <span>Danh Mục</span>
                     </a>
